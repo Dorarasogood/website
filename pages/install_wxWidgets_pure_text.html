@@ -26,7 +26,7 @@ path that contains spaces.)<br>
 開啟bash，輸入指令：$ cd /mnt/c/wxWidgets-3.0.4<br>
 ps:如果你是安裝在其他地方，就$cd至解壓縮的目的地<br>
 (步驟4)<br>
-下指令<br>
+在bash下指令<br>
 $sudo apt-get update<br>
 $sudo apt-get install libwxgtk3.0-dev<br>
 $ sudo apt-get install libgtk-3-dev build-essential checkinstall<br>
@@ -36,15 +36,14 @@ $ ../configure --enable-unicode --enable-debug<br>
 $make<br>
 $sudo make install<br>
 (步驟5)<br>
-確認是否正確安裝<br>
+輸入下面指令確認是否正確安裝<br>
 $wx-config --version<br>
 (步驟6)<br>
 安裝server(請看下面的VcXsrv教學)<br>
 (步驟7)<br>
-server(VcXsrv)開啟後，測試內建小程式<br>
-下指令(原來地方)<br>
-(要去gtk-build/samples/minimal)<br>
-$cd samples/minimal<br>
+server(VcXsrv)開啟後，在原本bash輸入以下指令，<br>
+測試內建小程式<br>
+$ cd /mnt/c/wxWidgets-3.0.4/gtk-build/samples/minimal<br>
 $make<br>
 $./minimal<br>
 (步驟8)<br>
@@ -53,7 +52,7 @@ href="https://docs.wxwidgets.org/3.0/overview_helloworld.html">https://docs.wxwi
 寫好程式後，在你的程式檔案目錄下，下指令(XXX:代表檔案名稱)<br>
 $g++ XXX.cpp `wx-config --cxxflags --libs` -o XXX<br>
 $export DISPLAY=:0<br>
-./XXX<br>
+$ ./XXX<br>
 <br>
 &lt;&lt;補充1&gt;&gt;<br>
 如果想要每次開啟bash自動執行export DISPLAY=localhost:0.0，<br>
@@ -134,4 +133,5 @@ href="https://virtualizationreview.com/articles/2017/02/08/graphical-programs-on
 <br>
 </body>
 </html>
+
 
