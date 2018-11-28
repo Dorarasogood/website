@@ -41,13 +41,18 @@ $wx-config --version<br>
 (步驟6)<br>
 安裝server(請看下面的VcXsrv教學)<br>
 (步驟7)<br>
+測試server是否正確開啟<br>
+$sudo apt-get install x11-apps<br>
+$export DISPLAY=:0<br>
+$xeyes<br>
+(步驟8)<br>
 server(VcXsrv)開啟後，在原本bash輸入以下指令，<br>
 測試內建小程式<br>
 $ cd /mnt/c/wxWidgets-3.0.4/gtk-build/samples/minimal<br>
 $make<br>
 $export DISPLAY=:0<br>
 $./minimal<br>
-(步驟8)<br>
+(步驟9)<br>
 撰寫自己的程式(可以使用範例<a
 href="https://docs.wxwidgets.org/3.0/overview_helloworld.html">https://docs.wxwidgets.org/3.0/overview_helloworld.html</a>)<br>
 寫好程式後，在你的程式檔案目錄下，下指令(XXX:代表檔案名稱)<br>
@@ -134,4 +139,5 @@ href="https://virtualizationreview.com/articles/2017/02/08/graphical-programs-on
 <br>
 </body>
 </html>
+
 
